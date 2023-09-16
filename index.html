@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> MH | Fitness</title>
+    <style>
+        /* css reset */
+
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-image: url(bg6.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+        }
+
+        .left {
+
+            display: inline-block;
+            position: absolute;
+            left: 25px;
+            top: 18px;
+
+
+        }
+
+        .left img {
+            width: 80px;
+            filter: invert(100%);
+            border: 2px solid white;
+            border-radius: 10px;
+
+        }
+
+        .right {
+
+            display: inline-block;
+            position: absolute;
+            right: 25px;
+            top: 38px;
+
+        }
+
+        .mid {
+
+            display: block;
+            width: 60%;
+            margin: 30px auto;
+
+
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 15px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: bold;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 6px 34px;
+            margin: 20px 20px;
+        }
+
+
+        .navbar li a:hover {
+            background-color: white;
+            border: 2px solid white;
+            border-radius: 44%;
+            color: rgb(0, 0, 0);
+        }
+
+        .navbar li a.active {
+
+            text-decoration: underline;
+            color: rgb(185, 185, 185)
+        }
+
+        .btn {
+            margin: 0px 10px;
+            background-color: black;
+            color: white;
+            padding: 4px 4px;
+            border: 2px solid gray;
+            border-radius: 10px;
+            cursor: pointer;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 14px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: rgb(247, 243, 243);
+            color: black;
+        }
+
+        .container {
+            
+            margin: 90px 54px;
+            padding: 50px;
+            width: 42%;
+            border-radius: 20px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: bold;
+        }
+        .formgroup input{
+            text-align: center;
+            display: block;
+            width: 450px;
+            padding: 7px;
+            border: 2px solid black;
+            border-radius: 14px;
+            margin: 6px auto;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 15px;
+
+        }
+        .container button{
+           display: block;
+           width: 73%;
+           margin:  10px 80px;
+           
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <!-- left box for navbar -->
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img src="basiccc.jpg" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div
+                style="text-align: center; font-size: 20px; font-weight: bolder; color: rgb(255, 255, 255); font-family: 'Times New Roman', Times, serif;">
+                MH | Fitness</div>
+        </div>
+        <div class="mid">
+            <!-- mid box for navbar  -->
+
+            <div class="navbar">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Join Us</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Programs</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="right">
+            <!-- right box for buttons -->
+            <button class="btn">Login</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h3 style="text-align: center; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-weight: bold;">JOIN THE BEST FITNESS CENTER IN MULTAN</h3>
+        <form action="noaction.php">
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+        </form>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+        </form>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+        </form>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your Program">
+            </div><br>
+            <button class="btn">SUBMIT</button>
+        </form>
+    </div>
+</body>
+
+</html>
